@@ -77,9 +77,10 @@ Sort from highest to lowest match score.`;
         "X-Title": "Candidate Shortlisting System",
       },
       body: JSON.stringify({
-        model: "openai/gpt-4.1",
+        model: "google/gemini-2.0-flash-001",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.3,
+        max_tokens: 1500,
       }),
     });
 
@@ -181,9 +182,10 @@ Respond ONLY with valid JSON (no markdown, no code fences):
         "X-Title": "Candidate Shortlisting System",
       },
       body: JSON.stringify({
-        model: "openai/gpt-4.1",
+        model: "google/gemini-2.0-flash-001",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.5,
+        max_tokens: 1500,
       }),
     });
 
