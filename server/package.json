@@ -1,0 +1,16 @@
+{
+  "name": "candidate-filter-server",
+  "version": "1.0.0",
+  "description": "Backend for Candidate Profile Shortlisting System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  }
+}
